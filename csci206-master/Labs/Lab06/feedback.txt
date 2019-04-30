@@ -1,0 +1,36 @@
+------------------------------------------------------------
+Lab06 feedback for Gabriel Gomez (gag014)
+------------------------------------------------------------
+Leaf Procedure: Leaf procedure implemented in prelab.s. Function returns the proper value. The
+static variable C is properly defined in the data segment. $ra is noted for
+the two calls to my_func in a comment.
+	Score: 13 / 15
+	Comment: Missing two $ra's in the comment
+
+Collatz in C: collatz.c is completed correctly using a recursive function (find_length) and
+a leaf function (collatz). C Coding conventions are followed (including adding
+good comments and compilation instructions or a makefile).
+	Score: 10 / 10
+	Comment: Good.
+
+xfind: (3 points) for documenting register assignments; (2 points) for commenting
+code; (15 points) for correct functionality.
+	Score: 15 / 20
+	Comment: -5: functionality: should have return the address of 'x', not its hex value.
+
+largeproc: (5 points) for documenting register assignments; (5 points) for commenting
+code; (5 points) for correct stack frame for small_proc; (5 points) for
+correct stack frame for large_proc; (10 points) for correct functionality.
+	Score: 27 / 30
+	Comment: The idea is that large_proc takes the six arguments at once. The two extra arguments (they don't fit in the four $a registers) should have been passed on the stack.
+
+collatz: (3 points) for documenting register assignments; (2 points) for commenting
+code; (10 points) for correct stack frames in all procedures; (10 points) for
+correct functionality.
+	Score: 20 / 25
+	Comment: Did not build stack frames for any procedures. Your code does not follow the MIPS convention and it will break when called by other assembled code.
+
+------------------------------------------------------------
+TOTAL 85.0 / 100.0
+------------------------------------------------------------
+

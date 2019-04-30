@@ -1,0 +1,43 @@
+------------------------------------------------------------
+Lab08 feedback for Gabriel Gomez (gag014)
+------------------------------------------------------------
+prelab: snode.h: snode.h has a working definition of struct snode and declaration for
+snode_create.
+	Score: 10 / 10
+	Comment: Good. Would be better if you put guards around your declarations. 
+
+prelab: snode.c: snode.c has a correct snode_create that uses malloc and strcpy; -3 if it does
+not set length, str, or next.
+	Score: 10 / 10
+	Comment: Good
+
+prelab: snode-test: snode-test works and compiles with a valid Makefile.
+	Score: 3 / 5
+	Comment: Did not have a makefile
+
+dnone_test: dnode.h / .c created and dnode_test.c runs without memory leaks.
+	Score: 0 / 25
+	Comment: Did not complete this part
+
+dlist: dlist.h / .c created with basic functions (create, destroy, add_front,
+add_back).
+	Score: 0 / 15
+	Comment: No dlist files.
+
+song_list: song_list runs correctly (5 points) without memory leaks (5 points).
+	Score: 0 / 10
+	Comment: No files for song_list
+
+dlist_funcs: higher level functions (insert_before, insert_after, find, remove) added to
+dlist.
+	Score: 0 / 15
+	Comment: No dlist files
+
+dlist_test: dlist_test runs correctly (5 points) without memory leaks (5 points).
+	Score: 0 / 10
+	Comment: No file provided
+
+------------------------------------------------------------
+TOTAL 23.0 / 100.0
+------------------------------------------------------------
+

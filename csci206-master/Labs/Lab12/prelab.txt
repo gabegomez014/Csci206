@@ -1,0 +1,14 @@
+<Gabe Gomez>
+CSCI206
+Lab12
+<Apr. 20th, 2017>
+
+Mini_Bomb 2:
+	Check_Pin Value : 9876
+	
+	Reasoning: We see that the immediate is 9876. If that same value is used for a0, then the two will cancel out, does giving the right value for v0. 
+	
+Mini_Bomb 3:
+	Check_Pin Value : Any and all binary bits that represent 1x0x0x1, where x can be either 0 or 1 and the binary number must be greater than 1000001.
+	
+	Reasoning: In binary, 0x55 is 1010101. Now, we know that v0 is 65, and in binary that is 1000001. In the first set of intructions, a0 has the andi operation with 0x55. Since there is a BNE instruction ahead, we wabt v1 to equal 65. With the andi operation, this can be achieved in all ways 1x0x0x1 where, again, x can be 0 or 1.  

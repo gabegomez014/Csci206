@@ -1,0 +1,23 @@
+<Gabe Gomez>
+CSCI206
+Lab01
+<Jan. 17th, 2017>
+
+One line mkdir ~/csci206/Labs/Lab01: mkdir -p ~/csci206/Labs/Lab01
+
+cat description: Concatenates a file, or files, to a standard output that is readale 
+
+more description: Pages through text one screenful at a time
+less description: Similar to more, but allows backwards and forward movement within a file. 
+
+head description: Prints the first 10 lines within a file to standard output.
+
+tail description: Prints out the last 10 lies within a file to stadard ouput.
+
+Command line to start up emacs without a GUI: emacs -nw
+
+Command to show line numbers in vim: :set number
+
+Command to show line numbers in emacs: M-x linum-mode
+
+After careful consideration, I will use vim in csci206 as my text editor.

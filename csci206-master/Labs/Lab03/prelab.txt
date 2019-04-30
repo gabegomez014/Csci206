@@ -1,0 +1,93 @@
+/* Gabe Gomez
+ * January 31st, 2017/ 10 AM lab
+ * lab 03 - prelab
+ * compile with: N/A
+ * notes: none
+ */
+
+Exercise 1: gdb
+
+1.) You have to set a break point at whatever line you wish to see such information at.
+
+2.) b 50
+
+3.) p count
+
+4.) set vraibale count = 42
+
+Exercise 2:
+
+$zero: This is useful because it will allow us to make a certain register equal to a certain value we may want.
+
+$at: Useful when it comes to pseudoinstruction.
+
+$v0-$v1: Good for holding values for funtions since is quick to set to.
+
+$a0-$a3: Useful for olding arguments in functions.
+
+$t0-$t7: Useful for creating temporary variables for within functions that will not exist once the call is done.
+
+$s0-$s7: Good for saving variables and storing them
+
+$t8-$t9: More space in order to create temporary variables within functions
+
+$k0-$k1: Good to catch errors
+
+$gp: Good for creating a variable that can be accessed from any function
+
+$sp: Good for nesting subroutines.
+
+$fp: Good for getting the start of the stack frame.
+
+$ra: Good for when you have to return a value within a funciton.
+
+Exercise 3:
+
+1.) add $s1, $s2, $s3
+	(a)Adds the values contained in the two source  registers; stores the 		result into the destination register. Effectively: $s1 = $s2 + $s3.
+	(b) Source Registers: $s2, $s3
+	(c) Destination Register: $s1
+
+2.) addi $s1, $s3, 2
+	(a) User gives a certain input that is wanted, and is added immediately 	a register.
+	(b) Source Registers: $s3, 2
+	(c) Destination Register: $s1
+
+3.) lw $t6, 4($s0)
+	(a) loads a word from memory to the register that is being assigned to it 	doing the value at $s0 + 4
+	(b) Source Registers: $s0, 4
+	(c) Destination Register: $t6
+
+4.) add $t3, $s1, $s2
+	(a) Adds two source registers and sets it to a specified destination 		register.
+	(b) Source Registers: $s1, $s2
+	(c) Destination Register: $t3
+
+5.) sub $v0, $t1, $s2
+	(a) Subtracts the two source registers and then sets it to the specified 		register.
+	(b) Source Registers: $t1, $t2
+	(c) Destination Register: $v0
+
+Exercise 4:
+
+1.) 59 (base 10) to 8-bit binary:
+
+	59 = 32 + 16 + 8 + 2 + 1 = 2^5 + 2^4 + 2^3 + 2^1 + 2^0 = 00111011
+
+2.) 10111011 (base 2) to 8 bit hexadecimal:
+	
+	10111011 = 2^0 + 2^1 + 2^3 + 2^4 + 2^5 + 2^7 = 187 = 176 + 11 = B*16^1 + 			B*16^0
+
+3.) 129 (base10) to 8-bit hexadecmial:
+
+	129 = 128 + 1 = 8 * 16^1 + 8 * 16^0 = 81
+
+4.) 0xFEEDBEEF (base 16) to binary (use as many bits as required):
+	
+	0xFEEDBEEF = 15 + 224 + 3584 + 45056 + 851968 + 14680064 + 234881024 + 		4026531840 = 4276993775 = 2^31 + 2^30 + 2^29 + 2^28 + 2^27 + 2^26 + 2^25 		+ 2^23 + 2^22 + 2^21 + 2^19 + 2^18 + 2^16 + 2^15 + 2^13 + 2^12 + 2^11 + 	2^10 + 2^9 + 2^7 + 2^6 + 2^5 + 2^3 + 2^2 + 2^1 +2^0 = 			 	 11111110111011011011111011101111
+
+
+5.) 0743 (base 8) to binary (use as many bits as required):
+
+	0743 = 3 + 4 * 16 + 7 * 16^2 = 1859 = 2^10 + 2^9 + 2^8 + 2^6 + 2^1 + 2^0 	 = 11101000011
+

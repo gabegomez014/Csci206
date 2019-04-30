@@ -1,0 +1,14 @@
+<Gabe Gomez>
+CSCI206
+Lab10
+<Apr. 4th, 2017>
+
+1.1.) Stack smashing is a buffer overflow. It is when you try to save something that is too large, and then overwrites later memory addresses.
+
+1.2) Since there is limited space within the stack where much of the memory is held, if space runs out, information at the bottom of the stack will simply be lost.
+
+1.3) To disassemble is to convert a program in its executable form into a representation that is in assembly language.
+
+1.4) The reason that the disassembled code looks so different is because GCC optimizes differently things in a certain way.
+
+1.5) The reason that the output is 0 instead of 1 is because memory got too large and addresses messed what should have been.

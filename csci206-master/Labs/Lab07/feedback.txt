@@ -1,0 +1,41 @@
+------------------------------------------------------------
+Lab07 feedback for Gabriel Gomez (gag014)
+------------------------------------------------------------
+prelab: zyBook: zyBook activities >80% complete.
+	Score: 10 / 10
+	Comment: Good
+
+exit.s: successfully modified exit.s.
+	Score: 5 / 5
+	Comment: Good
+
+primes.c: primes C created with correct is_prime function [5 points]. Benchmark results
+from mips machine for 10,020 primes added to primes.c as a comment [5 points].
+	Score: 10 / 10
+	Comment: Good
+
+is_prime: is_prime.s works and benchmarked in primes2.c and Makefile builds primes2.
+	Score: 10 / 15
+	Comment: Failed to make: undefined reference to `is_prime'. Could be your .text
+.global is_prime
+.global loop
+.global not_prime
+.global prime
+lines.
+
+counte: counte implemented in C/asm and compiles with Makefile.
+	Score: 15 / 20
+	Comment: Failed to compile b/c the counte rule in makefile is incorrect.
+
+matrix_sum: matrix_sum.c/s correct and compiles with Makefile.
+	Score: 13 / 20
+	Comment: Seg faulted.
+
+time: time.c/s correct and compiles with Makefile.
+	Score: 0 / 20
+	Comment: Files not found.
+
+------------------------------------------------------------
+TOTAL 63.0 / 100.0
+------------------------------------------------------------
+

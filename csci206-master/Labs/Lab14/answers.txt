@@ -1,0 +1,27 @@
+Exercise 2:
+
+2.1)  One of things that I had noticed that is a major difference between the two is the compulsory misses decrease. For example, it had gone from 19189 to 3266. This happened because compulsory misses happens on initial access to a block.
+ 
+Another major difference that I had seen was that the number of capcity misses also decreased. They had gone from 171534 to 94833. This happened because with larger blocks, the need to discard blocks happens less often.
+
+On the other hand, the number of conflict misses increased. It had gone from 120181 to 141642. This happens because since there are more blocks, it is more likely for collisions to occur due to the increased size of the block.  
+
+The multi-blick references decreased. They had gone from 1236 to 162. This happens because the increased block size causes less references that span over other blocks. 
+
+On top of that, the bytes from memory also increased. It had gone from 2535976 to 18105216. This happens because when a block of size 64 is 8 times larger than a block size of 8, thus greater total bytes from memory. 
+
+2.2) When I increase the total cache size from 8k to 16k, I noticed that the number of capcity misses decreased. They had gone from 171534 to 50394. The reason that this occurs is because an increased cache size leads to a decreased need to discard blocks since there is more room available within them. 
+
+The total bytes from memory also decreased from 2535976 to 1558560. This happens because the cache size has doubled. 
+
+2.3) Aside from the demand miss rate, one of the noticeable differences between each of the settings of different cache sizes is that as the total cahce size increases, the number of conflict misses decreases. This is because there is more memory in the cache, this leading to less conflict misses. 
+
+On top of that, the total number of bytes decreases as well as the cache size increases. 
+
+2.4) With increased associativity, we can see that the number of conflict misses increase. It had gone from 195454 to 349761. The reason that the amount of conflict misses increased is because with a small cache, it is not effective to have higher associativity, thus leading to more conflict misses.
+
+2.5) For this problem, I have observed that the conflict misses and capcity misses have decreased. For the problem in 2.4, we saw how high the conflict misses and capcity misses were due to associativity with a small cache size. Now that the cache size has increased, the power of associativity shows when it is truly useful to be used. 
+
+Exercise 3: 
+
+To start, increasing the block size led to a decrease in the total number of misses becasue it also decreased the amount of compulsory misses there were. As the block size got larger and larger, the benefits of a larger block size began to decrease. I chose 32 as a good middle ground. For the cache size, I found that that 64k led a good middle ground of miss rates. When I had changed the associaticity, I saw that as I increased it, it would lower the amomunt of conflict misses. With that, I chose 8 as my number for associativity. 

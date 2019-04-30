@@ -1,0 +1,41 @@
+Exercise 1:
+
+Segment     |    Start    |     End      |     Size
+------------+-------------+--------------+-------------
+Stack       | 0x0040 0648 | 0x7fff ffff  | 0x7fbff9b7
+Heap        | 0x0040 0648 | 0x0040 0648  | 0x0
+Data        | 0x0040 05a4 | 0x0040 0648  | 0xa4
+Text        | 0x0040 0000 | 0x0040 05a4  | 0x5a4
+
+* note all addresses are inclusive.
+
+Exercise 2: 
+
+-All values we want for each problem is stored in $t0 as long as there is no label in problem
+
+1.)
+li $v0 5
+syscall
+move $t0, $v0
+
+2.) 
+li $v0, 1
+add $a0, $t0, $zero
+syscall
+
+3.) 
+li $v0, 8
+la $a0 0($t0)
+addi $a1, 10000
+syscall
+sw my_str, 0($a0)
+
+4.) 
+li $v0, 4
+la $a0, 0(prompt)
+syscall
+
+5.)
+li $v0, 17
+addi $a0, -1
+syscall

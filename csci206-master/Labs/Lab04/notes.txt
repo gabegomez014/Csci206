@@ -1,0 +1,25 @@
+/* Gabe Gomez
+ * February 8th, 2017/ 10 AM lab
+ * lab 04 - notes.txt
+ * notes: none
+ */
+
+creat(2): If there is a file that matches the pathname given, then that file is opened using open(). Otherwise, a new file is created.
+
+open(2): Opens a file with the path that is given, and can possibly create a file with path if a file creation flag is there. Must also give one of the access modes, which can be found on man page.
+
+read(2): If succesfully run, the number of bytes that were read should be returned, where 0 indicates the end of the file. On error, -1 is returned.
+
+write(2): Allows one to write to a file that has been opened. If not open(2)ed with O_APPEND, then file is cleared and one is allowed to write new. If O_APPEND was part of how it was open(2)ed, then one starts writing at the end of the opened document.
+
+close(2): Closes a file.
+
+fopen(3): Takes a file path and the argument mode that you want, and returns a FILE pointer
+
+fgets(3): Reads one less than the size characters from the stream and stores them in the buffer associated with it. Returns the buffer upon success.
+
+fprintf(3): Writes output to the stream that is associated with it. Returns the number of characters printed upon success.
+
+fseek(3): Sets the file position for the stream by adding the offset bytes to the whence (parameters that are passed within fseek). Returns 0 upon success.
+
+fclose(3): Closes the file. Returns 0 upon success. 

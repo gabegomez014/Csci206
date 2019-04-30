@@ -1,0 +1,31 @@
+------------------------------------------------------------
+Lab02 feedback for Gabriel Gomez (gag014)
+------------------------------------------------------------
+prelab: [25 points] Prelab reading / activities (zybook).
+	Score: 25 / 25
+isalary: ex1 salary and isalary correct and have all header information.
+	Score: 10 / 10
+	Comment: Good.
+
+nogood and fsalary: nogood and fsalary correct and compile without warning with -Wall. -5 for each
+warning, -15 for an error
+	Score: 20 / 20
+	Comment: Good.
+
+as and ld: nogood.s and nogood.o exist.
+	Score: 10 / 10
+	Comment: Good
+
+cvp: primefact.py and primefact.c exist, compile without warning, and speedup is
+reasonable (noted in primefact.c).
+	Score: 23 / 25
+	Comment: Compiled with warning and returned non-zero value
+
+change case: switchcase.c compiles without warning and operates correctly.
+	Score: 10 / 10
+	Comment: Good
+
+------------------------------------------------------------
+TOTAL 98.0 / 100.0
+------------------------------------------------------------
+
